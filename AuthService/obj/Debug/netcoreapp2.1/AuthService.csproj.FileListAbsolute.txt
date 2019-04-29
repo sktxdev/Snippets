@@ -1,0 +1,11 @@
+/Users/skhandwala/Projects/AuthService/obj/Debug/netcoreapp2.1/AuthService.csprojAssemblyReference.cache
+/Users/skhandwala/Projects/AuthService/obj/Debug/netcoreapp2.1/AuthService.csproj.CoreCompileInputs.cache
+/Users/skhandwala/Projects/AuthService/obj/Debug/netcoreapp2.1/AuthService.AssemblyInfoInputs.cache
+/Users/skhandwala/Projects/AuthService/obj/Debug/netcoreapp2.1/AuthService.AssemblyInfo.cs
+/Users/skhandwala/Projects/AuthService/bin/Debug/netcoreapp2.1/AuthService.deps.json
+/Users/skhandwala/Projects/AuthService/bin/Debug/netcoreapp2.1/AuthService.runtimeconfig.json
+/Users/skhandwala/Projects/AuthService/bin/Debug/netcoreapp2.1/AuthService.runtimeconfig.dev.json
+/Users/skhandwala/Projects/AuthService/bin/Debug/netcoreapp2.1/AuthService.dll
+/Users/skhandwala/Projects/AuthService/bin/Debug/netcoreapp2.1/AuthService.pdb
+/Users/skhandwala/Projects/AuthService/obj/Debug/netcoreapp2.1/AuthService.dll
+/Users/skhandwala/Projects/AuthService/obj/Debug/netcoreapp2.1/AuthService.pdb
