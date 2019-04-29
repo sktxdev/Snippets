@@ -558,6 +558,7 @@
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
+        ".nupkg.metadata",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -693,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/skhandwala/Projects/AuthService/AuthService.csproj",
+      "projectUniqueName": "/Users/skhandwala/Projects/Snippets/AuthService/AuthService.csproj",
       "projectName": "AuthService",
-      "projectPath": "/Users/skhandwala/Projects/AuthService/AuthService.csproj",
+      "projectPath": "/Users/skhandwala/Projects/Snippets/AuthService/AuthService.csproj",
       "packagesPath": "/Users/skhandwala/.nuget/packages/",
-      "outputPath": "/Users/skhandwala/Projects/AuthService/obj/",
+      "outputPath": "/Users/skhandwala/Projects/Snippets/AuthService/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
