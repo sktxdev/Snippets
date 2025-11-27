@@ -7,9 +7,9 @@
 docker exec -it kafka /bin/bash
 
 # create topic
-kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic my-topic
+/opt/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic my-topic
 
 # list topics
-kafka-topics --list --bootstrap-server localhost:9092
+/opt/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 ```
