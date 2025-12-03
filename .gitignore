@@ -30,3 +30,7 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+
+# Docker (in case you have Docker-related data files in this project)
+Docker/data/*
+Docker/kafka-data/*
