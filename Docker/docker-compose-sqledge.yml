@@ -1,0 +1,15 @@
+# version: "3.9"
+
+services:
+  sqlserver:
+#   For Azure SQL Edge use the following image
+    image: mcr.microsoft.com/azure-sql-edge
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=P@55w0rd
+    ports:
+      - "1433:1433"
+    volumes:
+      - ~/DockerData/sqlserver:/var/opt/mssql/data
+
