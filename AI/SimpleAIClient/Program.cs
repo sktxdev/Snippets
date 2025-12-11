@@ -26,7 +26,8 @@ namespace ModelRunnerClient
                 if (string.IsNullOrWhiteSpace(prompt) || prompt.ToLower() == "exit")
                     break;
 
-                var modelUnderTest = "ai/smollm2";
+                //var modelUnderTest = "ai/smollm2";
+                var modelUnderTest = "ai/qwen3";
 
                 var requestPayload = new
                 {

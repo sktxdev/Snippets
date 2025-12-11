@@ -11,6 +11,10 @@ docker model run ai/smollm2
 curl http://localhost:12434
 ```
 
+### Alternatives to Docker
+- [ollama] (https://ollama.com/)
+- [lmstudio] (https://lmstudio.ai/)
+
 #### GPU Usage
 
 ![Alt text](./images/PerformanceMonitorShowingGPUUsage.png)
