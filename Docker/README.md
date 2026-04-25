@@ -17,9 +17,11 @@ docker exec -it kafka /bin/bash
 
 | Name | OS | Notes |
 | ---- | -- | ----- |
-| docker-compose-sqlserver.yml | Windows | |
-| docker-compose-postgres.yml | Windows & mac| |
-| docker-compose-mongo.yml | Windows & Mac | |
-| docker-compose-kafka.yml | Windows & Mac | |
-| docker-compose-all.yml | Windows & Mac | Launches everything - this is probably overkill |
+| azurite/docker-compose-azurite.yml | Windows & Mac | Azure blob storage for local testing |
+| sqlserver/docker-compose-sqlserver.yml | Windows | |
+| sqledge/docker-compose-sqledge.yml | Mac | |
+| postgres/docker-compose-postgres.yml | Windows & mac| |
+| mongo/docker-compose-mongo.yml | Windows & Mac | |
+| kafka/docker-compose-kafka.yml | Windows & Mac | |
+| everything/docker-compose-all.yml | Windows & Mac | Launches everything - this is probably overkill |
 
