@@ -2,7 +2,8 @@
 
 ## Why do we need it
 
-By reducing model size we run an AI
+By reducing model size we can run an AI
+
 - embedded in a webapp using the local gpu (webgpu)
 - on your phone, etc.,
 - on your home automation system
@@ -11,6 +12,7 @@ By reducing model size we run an AI
 ### Some size estimates
 
 #### Small Models
+
 - Gemma 3 1B (1 billion parameters): ~1.5 GB (16-bit), ~1.1 GB (8-bit)
 - Gemma 3 4B (4 billion parameters): ~6.4 GB (16-bit), ~4.4 GB (8-bit)
 
@@ -25,6 +27,7 @@ By reducing model size we run an AI
 - LLaMA 3 70B (70 billion parameters): Can require 48 GB- VRAM, often needing 350–700 GB for efficient operation.
 
 #### Estimating Model Size
+
 - Determine the parameter count of the model you want to use.
 - Decide on the precision you will use (e.g., 16-bit or 8-bit).
 
@@ -50,7 +53,6 @@ The trick is to know what is good enough
 ## Neural Network
 
 Simplified view of a network showing weights and activation
-
 
 ![Alt text](./images/ANN-with-4-inputs-2-hidden-layers-with-5-neurons-and-3-outputs-Weights-of-connections.png)
 
@@ -100,6 +102,7 @@ This means some models will not run. (Shameless plug.. use a mac, the shared ram
 There are some ways to reduce this loss, but thats another presenation...
 
 ## Common Quantization Techniques
+
 - PT - Post Training Quantization - used to reduce footprint of a trained model. This is quick, but loss of accuracy is an issue
 - QAT - Quantization Aware Training - quantization is simulated during the training process - is better than PT
 - DQ - Dynamic Quantization - Weights are quantized before hand, and also during training
@@ -108,15 +111,13 @@ There are some ways to reduce this loss, but thats another presenation...
 
 ![Alt text](./images/FP32.jpg)
 
-
 ![Alt text](./images/FP16-2.jpg)
-
 
 ![Alt text](./images/Chunking%20down%20to%20int8.png)
 
 ![Alt text](./images/Chunking%20Down.png)
 
-We first calculate a scale factor ( s ) using:
+We first calculate scale factor (s) using:
 
 b is the number of bytes that we want to quantize to (8),
 
@@ -135,11 +136,11 @@ The quantized value now required only 8 bits to represent, so a potential 4Gb of
 Note, FP4 now seems to be a thing (but I need to read up on it)
 
 ## References
+
 Images and material taken from:
 https://www.maartengrootendorst.com/blog/quantization/
 
 Models (gguf)
 https://huggingface.co/models?sort=trending&search=gguf
-
 
 [Back to readme](README.md)

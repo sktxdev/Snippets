@@ -10,6 +10,8 @@ namespace ModelRunnerClient
         private static readonly HttpClient _httpClient = new HttpClient();
         private const string DockerModelRunnerApiUrl = "http://localhost:12434/engines/llama.cpp/v1/chat/completions";
 
+        // Use this URL to connect to an AI running with LMStudio server
+        // private const string DockerModelRunnerApiUrl = "http://192.168.4.34:1234/v1/chat/completions";
         public static async Task Main()
         {
             Console.WriteLine("Welcome to the Docker Model Runner .NET Client!");
@@ -26,14 +28,15 @@ namespace ModelRunnerClient
                 if (string.IsNullOrWhiteSpace(prompt) || prompt.ToLower() == "exit")
                     break;
 
-                var modelUnderTest = "ai/smollm2";
+                // var modelUnderTest = "ai/smollm2";
+                var modelUnderTest = "claude-3.7-sonnet-reasoning-gemma3-12b";
 
                 var requestPayload = new
                 {
                     model = modelUnderTest,
                     messages = new[]
                     {
-                           new { role = "system", content = "You are a helpful assistant." },
+                           new { role = "system", content = "You are a helpful coding assistant." },
                            new { role = "user", content = prompt }
                        }
                 };
